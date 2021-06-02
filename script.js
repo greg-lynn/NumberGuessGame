@@ -10,7 +10,7 @@ function generateTarget() {
 function compareGuesses(humanGuessInput, target, computerGuess) {
     if (Math.abs(humanGuessInput - target) <=  Math.abs(computerGuess - target)) {
         return true;
-    } if  (Math.abs(humanGuessInput - target) >=  Math.abs(computerGuess - target)){
+    } if (Math.abs(humanGuessInput - target) >=  Math.abs(computerGuess - target)) {
         return false;
     }
 }
@@ -18,7 +18,7 @@ function compareGuesses(humanGuessInput, target, computerGuess) {
 function updateScore(winner) {
     if (winner == 'human') {
         return humanScore++
-    } if (winner == "computer") {
+    } if (winner == 'computer') {
         return  computerScore++
     } else {
 
